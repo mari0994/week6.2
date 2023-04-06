@@ -1,0 +1,36 @@
+@import './general'; 
+
+h1{
+    font-family: $font;
+}
+
+nav{
+    .part-1{
+        button{
+            border: 0px;
+            padding:5px;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+    .part2{}
+}
+
+.big-btn{
+    @extend %btn
+}
+
+.arrow1{
+    background-image: url('../images/arrow.button.left.png');
+    background-color: white;
+    width: 60px;
+    height: 60px;
+}
+
+.arrow2{
+    background-image: url('../images/arrow.button.right.png');
+    background-color: white;
+    width: 60px;
+    height: 60px;
+}

@@ -1,0 +1,49 @@
+$font: 'SF Pro Display';
+$color: #161616;
+
+%btn{
+    width: 400px;
+    height: 60px;
+    border: 1px solid $color;
+    font-size: 14px;
+    background-color: white;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(../fonts/SF-Pro-Display-Regular.otf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a, button, p, h1, h2, h3, h4, li, span{
+    font-family: $font;
+    color: $color;
+    text-decoration: none;
+}
+
+/*font sizes*/
+
+p, button, li, span{
+    font-size: 14px;
+}
+
+.big-txt{
+    font-size: 18px;
+}
+
+h1, h2, h3{
+    font-size: 64px;
+}
+
+h4{
+    font-size: 48px;
+}
+
+.h-footer{
+    font-size: 14px;
+}
