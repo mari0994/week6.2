@@ -354,7 +354,7 @@ footer .box2 h4 {
   color: white;
   margin-left: 50px;
 }
-footer .box2 h4:before {
+footer .box2 h4::before {
   background-image: url("../images/line.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -389,7 +389,7 @@ footer .box3 h4 {
   color: white;
   margin-left: 50px;
 }
-footer .box3 h4:before {
+footer .box3 h4::before {
   background-image: url("../images/line.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -414,7 +414,7 @@ footer .box4 h4 {
   color: white;
   margin-left: 50px;
 }
-footer .box4 h4:before {
+footer .box4 h4::before {
   background-image: url("../images/line.png");
   background-position: center center;
   background-repeat: no-repeat;
