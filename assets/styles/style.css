@@ -224,30 +224,227 @@ main .container4 .wrapper1 {
   height: 1725px;
   display: grid;
   grid-template-columns: 2fr 2fr 1fr 2fr 1fr;
-  /*grid-template-rows: ;*/
+  grid-template-rows: 150px 675px 150px 600px 150px;
+}
+main .container4 .wrapper1 .box1 {
+  grid-column: 2/5;
+}
+main .container4 .wrapper1 .box2 {
+  grid-area: 2/2/3/5;
+  width: 998, 72px;
+  height: 675px;
+}
+main .container4 .wrapper1 .box3 {
+  grid-area: 4/2/5/3;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-right: 107px;
+}
+main .container4 .wrapper1 .box4 {
+  grid-area: 4/3/5/6;
+  /*почему картинка не вписываетс в ширину, даж если задать отдельно width для нее*/
 }
 main .container4 .wrapper2 {
   height: 1333px;
   display: grid;
   grid-template-columns: 2fr 2fr 1fr 2fr 1fr;
-  /*grid-template-rows: ;*/
+  grid-template-rows: 750px 503px 70px;
+  row-gap: 10px;
+}
+main .container4 .wrapper2 .box5 {
+  grid-column: 2/3;
+}
+main .container4 .wrapper2 .box6 {
+  grid-column: 4/5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .container4 .wrapper2 .box7 {
+  grid-area: 2/2/3/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 70px;
+}
+main .container4 .wrapper2 .box7 ul {
+  margin-top: 70px;
+  height: 293px;
+  line-height: 100%; /*почему не работает это свойство?*/
+}
+main .container4 .wrapper2 .box8 {
+  grid-area: 2/4/3/5;
+}
+main .container4 .wrapper2 .box9 {
+  grid-area: 3/2/4/5;
+  border-bottom: 1px solid #161616;
 }
 main .container4 .wrapper3 {
   height: 205px;
   display: grid;
-  grid-template-columns: 2fr 2fr 1fr 2fr 1fr;
-  /*grid-template-rows: ;*/
+  grid-template-columns: 4fr 1fr 3fr;
+  align-items: center;
 }
-.arrow1 {
+main .container4 .wrapper3 .box10 {
+  grid-column: 2/3;
+  display: flex;
+  justify-content: space-between;
+}
+main .container4 .wrapper3 .box10 .arrow1 {
   background-image: url("../images/arrow.button.left.png");
   background-color: white;
   width: 60px;
   height: 60px;
 }
-
-.arrow2 {
+main .container4 .wrapper3 .box10 .arrow2 {
   background-image: url("../images/arrow.button.right.png");
   background-color: white;
   width: 60px;
   height: 60px;
+}
+main .container5 {
+  height: 430px;
+  display: grid;
+  grid-template-columns: 4fr 3fr 1fr;
+}
+main .container5 .box1 {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 40px;
+}
+main .container5 .box1 div {
+  display: flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+
+footer {
+  background-color: #161616;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 3fr repeat(4, 1fr);
+  grid-template-rows: 272px 51px;
+}
+footer .box1 {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  row-gap: 40px;
+}
+footer .box1 img {
+  width: 102px;
+  height: 32px;
+}
+footer .box1 p {
+  color: white;
+  width: 400px;
+  margin-left: 55px;
+}
+footer .box2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  row-gap: 40px;
+}
+footer .box2 h4 {
+  color: white;
+  margin-left: 50px;
+}
+footer .box2 h4:before {
+  background-image: url("../images/line.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -50px;
+  top: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+footer .box2 div div {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+footer .box2 div span {
+  color: white;
+  padding-right: 5px;
+}
+footer .box2 div button {
+  color: white;
+  background-color: #161616;
+  border: none;
+}
+footer .box3 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  row-gap: 40px;
+}
+footer .box3 h4 {
+  color: white;
+  margin-left: 50px;
+}
+footer .box3 h4:before {
+  background-image: url("../images/line.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -50px;
+  top: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+footer .box3 p {
+  color: white;
+}
+footer .box4 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  row-gap: 40px;
+}
+footer .box4 h4 {
+  color: white;
+  margin-left: 50px;
+}
+footer .box4 h4:before {
+  background-image: url("../images/line.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -50px;
+  top: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+footer .box4 p {
+  color: white;
+  line-height: 17px;
+}
+footer .box5 {
+  grid-area: 2/2/3/6;
+  margin-left: 55px;
+  border-top: 1px solid white;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+footer .box5 span {
+  color: white;
+}
+footer .box5 a {
+  color: white;
+}
+footer .box5 a:first-child {
+  margin-left: auto; /*не работает тк нет свободного места?*/
 }/*# sourceMappingURL=style.css.map */
