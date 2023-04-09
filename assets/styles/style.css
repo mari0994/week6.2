@@ -23,7 +23,6 @@ a, button, p, h1, h2, h3, h4, li, span {
   text-decoration: none;
 }
 
-/*font sizes*/
 p, button, li, span {
   font-size: 14px;
 }
@@ -243,7 +242,7 @@ main .container4 .wrapper1 .box3 {
 }
 main .container4 .wrapper1 .box4 {
   grid-area: 4/3/5/6;
-  /*почему картинка не вписываетс в ширину, даж если задать отдельно width для нее*/
+  /*почему картинка не вписывается в ширину, дае если задать отдельно width для нее*/
 }
 main .container4 .wrapper2 {
   height: 1333px;
@@ -271,7 +270,7 @@ main .container4 .wrapper2 .box7 {
 main .container4 .wrapper2 .box7 ul {
   margin-top: 70px;
   height: 293px;
-  line-height: 100%; /*почему не работает это свойство?*/
+  line-height: 200%;
 }
 main .container4 .wrapper2 .box8 {
   grid-area: 2/4/3/5;
@@ -428,7 +427,7 @@ footer .box4 h4::before {
 }
 footer .box4 p {
   color: white;
-  line-height: 17px;
+  line-height: 200%;
 }
 footer .box5 {
   grid-area: 2/2/3/6;
