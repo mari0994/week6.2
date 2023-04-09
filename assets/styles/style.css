@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .big-btn {
   width: 400px;
   height: 60px;
@@ -43,16 +44,199 @@ h4 {
   font-size: 14px;
 }
 
-h1 {
-  font-family: "SF Pro Display";
+nav .part1 {
+  height: 55.5px;
+  border-bottom: 1px solid #161616;
+  display: grid;
+  grid-template-columns: repeat 5, 1fr 2fr 1fr;
+  align-items: center;
+}
+nav .part1 img {
+  grid-column: 2/3;
+}
+nav .part1 .nav1 {
+  grid-column: 3/4;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+nav .part1 .nav2 {
+  grid-column: 4/5;
+  display: flex;
+  justify-content: flex-end;
+}
+nav .part1 .nav3 {
+  grid-column: 6/8;
+  display: flex;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+}
+nav .part1 .nav3 .lang a:hover {
+  color: #CACACA;
+}
+nav .part1 .nav3 button {
+  border: 0px;
+  background-color: white;
+}
+nav .part1 .nav3 .nav4::before {
+  background-image: url("../images/icon.login.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -5px;
+  top: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%; /*почему не отображается?*/
+}
+nav .part2 {
+  position: absolute;
+  width: 196px;
+  height: 65px;
+  top: 56px;
+  left: 1146px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 20.5px;
+       column-gap: 20.5px;
 }
 
-nav .part-1 button {
-  border: 0px;
-  padding: 5px;
+main {
+  background-image: url("../images/slide.png");
+  background-position: 100px;
+  background-repeat: no-repeat;
 }
-nav .part-1 a {
-  text-decoration: none;
+main .container1 {
+  height: 1332px;
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr 1fr;
+  grid-template-rows: 384.5px 634px 1fr;
+}
+main .container1 .box1 {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .container1 .box1 h1 {
+  font-family: "SF Pro Display";
+}
+main .container1 .box2 {
+  grid-column: 3/4;
+  display: flex;
+  align-items: center;
+}
+main .container1 .box3 {
+  grid-area: 2/2/3/4;
+  background-image: url("../images/background.pic.png");
+}
+main .container1 .box4 {
+  grid-area: 3/3/4/4;
+  display: flex;
+  align-items: center;
+}
+main .container2 {
+  height: 850px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 3fr 1fr;
+  grid-template-rows: 1fr 1fr 143px;
+}
+main .container2 .box1 {
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+main .container2 .box1 h4 {
+  grid-column: 1/4;
+}
+main .container2 .box1 .txt1 {
+  grid-area: 2/1/3/3;
+  align-self: center;
+  margin-left: 90px;
+}
+main .container2 .box1 .txt1::before {
+  background-image: url("../images/background.arrow.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -90px;
+  top: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%; /*также не работает псевдоэлемент*/
+}
+main .container2 .box1 .txt2 {
+  grid-area: 2/3/3/5;
+  align-self: center;
+  margin-left: 90px;
+}
+main .container2 .box1 .txt2::before {
+  background-image: url("../images/background.arrow.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -90px;
+  top: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+main .container2 .box2 {
+  grid-area: 2/3/3/4;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+main .container3 {
+  height: 500px;
+  display: grid;
+  grid-template-columns: 2fr 5fr 1fr;
+  grid-template-rows: 76px 214px 1fr;
+}
+main .container3 h2 {
+  grid-column: 2/3;
+}
+main .container3 div {
+  grid-column: 2/3;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  row-gap: 40px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+main .container3 div a:visited {
+  color: #CACACA;
+}
+main .container3 .big-btn {
+  grid-column: 2/3;
+}
+main .container4 .wrapper1 {
+  height: 1725px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 2fr 1fr;
+  /*grid-template-rows: ;*/
+}
+main .container4 .wrapper2 {
+  height: 1333px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 2fr 1fr;
+  /*grid-template-rows: ;*/
+}
+main .container4 .wrapper3 {
+  height: 205px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 2fr 1fr;
+  /*grid-template-rows: ;*/
 }
 .arrow1 {
   background-image: url("../images/arrow.button.left.png");

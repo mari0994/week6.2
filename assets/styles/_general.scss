@@ -1,5 +1,6 @@
 $font: 'SF Pro Display';
 $color: #161616;
+$col-link: #CACACA;
 
 %btn{
     width: 400px;
@@ -46,4 +47,8 @@ h4{
 
 .h-footer{
     font-size: 14px;
+}
+
+.big-btn{
+    @extend %btn
 }
