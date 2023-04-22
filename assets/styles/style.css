@@ -373,17 +373,15 @@ footer .box2 h4 {
   margin-left: 50px;
 }
 footer .box2 h4::before {
-  background-image: url("../images/line.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: absolute;
-  content: "";
-  left: -50px;
-  top: 0;
+  position: relative;
+  content: " ";
+  left: -30px;
+  top: 8px;
   bottom: 0;
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 25px;
+  height: 1px;
+  background: #FFFFFF;
 }
 footer .box2 div div {
   padding-top: 5px;
@@ -410,17 +408,15 @@ footer .box3 h4 {
   margin-left: 50px;
 }
 footer .box3 h4::before {
-  background-image: url("../images/line.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: absolute;
-  content: "";
-  left: -50px;
-  top: 0;
+  position: relative;
+  content: " ";
+  left: -30px;
+  top: 8px;
   bottom: 0;
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 25px;
+  height: 1px;
+  background: #FFFFFF;
 }
 footer .box3 p {
   color: white;
@@ -437,17 +433,15 @@ footer .box4 h4 {
   margin-left: 50px;
 }
 footer .box4 h4::before {
-  background-image: url("../images/line.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: absolute;
-  content: "";
-  left: -50px;
-  top: 0;
+  position: relative;
+  content: " ";
+  left: -30px;
+  top: 8px;
   bottom: 0;
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 25px;
+  height: 1px;
+  background: #FFFFFF;
 }
 footer .box4 p {
   color: white;
